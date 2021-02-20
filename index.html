@@ -5,31 +5,51 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Profile card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  Victor Crest
-  26
-  London
-
-  80K
-  Followers
-
-  803K
-  Likes
-
-  1.4K
-  Photos
+  <img id="top-image" src="./images/bg-pattern-top.svg" alt="top">
+  <img id="bottom-image" src="./images/bg-pattern-bottom.svg" alt="bottom">
+  <section id="card-container">
+    <div id="card">
+      <div class="top">
+        <img src="./images/image-victor.jpg" alt="picture of Victor">
+      </div>
+      <div class="bottom">
+        <div class="name-age">
+          <strong>Victor Crest</strong>
+          <span class="lighten">26</span>
+        </div> 
+        <div class="location">
+          <span class="lighten">London</span> 
+        </div>
+      
+        <div class="social-info">
+          <div class="followers">
+            <strong>80K</strong>
+            <span class="lighten">Followers</span>
+          </div>
+        
+          <div class="likes">
+            <strong>803K</strong>
+            <span class="lighten">Likes</span>
+          </div>
+        
+          <div class="photos">
+            <strong>1.4K</strong>
+            <span class="lighten">Photos</span>
+          </div>
+        </div>  
+      </div>
+  </section>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Ryan Spears</a>.
   </div>
 </body>
 </html>

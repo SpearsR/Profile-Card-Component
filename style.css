@@ -1,0 +1,116 @@
+body {
+    background-color: hsl(185, 75%, 39%);
+    z-index: -3;
+    font-family:  "Kumbh Sans";
+    height: 100vh;
+    font-size: 18px;
+    overflow: hidden;
+}
+
+body > img {
+    position: absolute; 
+    z-index: -2;
+}
+
+#top-image {
+    top: -50%;
+    left: -3%;
+    overflow: hidden;
+}
+
+#bottom-image {
+    top: 45%;
+    left:53%;
+    overflow: hidden;
+}
+
+#card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#card {
+    width: 350px;
+    margin: 0 auto;
+    box-shadow: -5px 8px 10px rgba(20, 20, 20, 0.15);
+}
+
+.top {
+    background-image: url("./images/bg-pattern-card.svg");
+    height: 130px;
+    border-radius: 10px 10px 0 0;
+    z-index: -1;
+}
+
+.top img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 100%;
+    position: relative;
+    top: 80px;
+    border: 5px solid white;
+}
+
+.bottom {
+    background-color: white;
+    padding-top: 55px;
+    border-radius: 0 0 10px 10px;
+}
+
+
+.name-age, .location{
+    display: block;
+    text-align: center;
+}
+
+.name-age strong {
+    margin: 0 5px;
+}
+
+.name-age {
+    margin-top: 20px;
+}
+
+.location {
+    font-size: 16px;
+    margin-top: 7px;
+    margin-bottom: 25px;
+}
+
+.lighten {
+    color: grey;
+    font-size: .9em;
+}
+
+.social-info {
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid rgba(128, 128, 128, 0.2);
+    padding: 30px 0;
+}
+
+.social-info div {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.social-info div span {
+    font-size: .5em;
+    margin-top: 5px;
+    letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 600px){
+   #top-image {
+       top: -40%;
+       left: -130%;
+
+   }
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
